@@ -124,7 +124,7 @@ def main():
                 #ask if people want to save their tasks before exiting to prevent data loss
                 try:
                     save_before_exit = input("Do you want to save your tasks before you exit? (y/n): ").strip().lower()
-                    if save_before_exit = "y":
+                    if save_before_exit == "y":
                         file_name = input("Enter file name to save tasks to: ")
                         todo_manager.save_tasks(file_name)
                 except Exception as e:
